@@ -14,7 +14,7 @@ def finish_job(key, values, my_hash, res, first, state)
   return if state.size > 0
 
   if my_hash[key].nil?
-    state << "Error: Jobs can't have non-existant dependencies."
+    state << "Error: Jobs can't have non-existent dependencies."
     return
   end
 
