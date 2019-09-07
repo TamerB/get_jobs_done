@@ -43,7 +43,8 @@ def add_to_res(key, res)
 end
 
 def set_hash(s)
-  my_jobs = s.split(",")
+  s  = "" if s.nil?
+  my_jobs = s.split("\n")
   my_hash = Hash.new
 
   my_jobs.each do |j|
@@ -54,3 +55,7 @@ def set_hash(s)
 
   return my_hash
 end
+
+n = File.read("test.txt")
+
+puts get_jobs_done(n)
