@@ -1,14 +1,14 @@
 # get_jobs_done
 
-### The most simple way to test code is to add lines similar to the following :
+### You can pass string value to the method from file like in the following example :
 
+First, type the file name (or path) in the 59:
 ```
-print get_jobs_done("")
-print get_jobs_done("a=>")
-print get_jobs_done("a=>,b=>,c=>")
-print get_jobs_done("a=>,b=>c,c=>")
-print get_jobs_done("a=>,b=>c,c=>f,d=>a,e=>b,f=>")
-print get_jobs_done("a=>,b=>,c=>c")
-print get_jobs_done("a=>,b=>c,c=>f,d=>a,e=>,f=>b")
-print get_jobs_done("a=>,b=>c,c=>f,d=>h,e=>b,f=>")
+n = File.read("test.txt")
 ```
+Second, call the method
+```
+get_jobs_done.rb
+```
+
+Example input string is in test.txt
