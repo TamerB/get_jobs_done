@@ -43,7 +43,7 @@ def add_to_res(key, res)
 end
 
 def set_hash(s)
-  my_jobs = s.split("\n")
+  my_jobs = s.split(",")
   my_hash = Hash.new
 
   my_jobs.each do |j|
